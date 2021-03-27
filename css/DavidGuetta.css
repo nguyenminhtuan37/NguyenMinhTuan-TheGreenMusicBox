@@ -8,6 +8,10 @@
 body{
     background-color: black;
 }
+a{
+    text-decoration: none;
+    background-color: black;
+}
 #navbar{
     width: 100%;
     height: 60px;
@@ -25,6 +29,7 @@ body{
     width: 60px;
     height: 100%;
     margin-right: 10px;
+    
 }
 #home-button:hover{
     cursor: pointer;
@@ -100,24 +105,23 @@ body{
     background-color: black; 
     color: white;
 }
-
 .artist:hover{
     background-color: yellow;
+    
 }
-
+#ArtistName:hover{
+    background-color: yellow;
+    cursor: pointer;
+    /* transition vẫn được giữ lại mặc dù chuột đã ra khỏi thẻ*/
+    transition: 1s background-color;
+}
 #Artists:hover > #Artists-tray{
    display: block;
-}
-#introduction{
-    font-family: cursive;
-    font-size: 40px;
-    background-color: black;
-    color: chartreuse;
 }
 #topsongs{
     width: 120px;
     height: 100%;
-    margin-left: calc(900px - 270px);
+    margin-left: calc(100% - 450px - 270px);
 }
 #inner-topsongs{
     width: 120px;
@@ -127,41 +131,18 @@ body{
     line-height: 3;
     text-align: center;
     background-color: black;
-    transition: background-color 1s;
 }
-#inner-topsongs:hover{
-    background-color: purple;
-}
-.songwriters-line{
+#GuettaOnStage{
     width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 100px; 
-    background-color: black;
+    height: 400px;
+    position: relative;
 }
-.songwriters{
-    width: 300px;
-    height: 300px;
-    background-color: black;
-}
-.artist-image{
-    width: 300px;
-    height: 270px;
-    background-color: black;
-    border: 0;
-    border-radius: 8px; 
-    object-fit: cover;
-}
-.artist-realname{
-    width: 300px;
-    height: 30px;
-    font-family: cursive;
-    text-align: center;
-    line-height: 2;
-    background-color: black;
-}
-a{
-    text-decoration: none;
-    background-color: black;
+#NameArtist{
+    width: auto;
+    height: 200px;
+    font-family: serif;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    background-color: cadetblue;
 }
