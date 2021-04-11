@@ -9,8 +9,19 @@ innerTopsongs.addEventListener('mouseout', () => {
     
 })
 
-var Titanium = new Audio;
-Titanium.src = 
+var Titanium = document.getElementById("Titanium")
+var SongChanges = document.getElementById("song-change")
+
+SongChanges.addEventListener("click", PlayandPause)
+function PlayandPause(){
+    if(Titanium.paused){
+       Titanium.play()
+    }
+    else{
+        Titanium.pause()
+    }
+}
+
 
 
 
