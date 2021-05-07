@@ -1,235 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        *{
-    margin: 0;
-    padding: 0;
-    background-color: gray;
-    color: white;
-    box-sizing: border-box;
-}
-body{
-    background-color: black;
-}
-a{
-    text-decoration: none;
-    background-color: black;
-}
-#navbar{
-    width: 100%;
-    height: 60px;
-    background-color: black;
-    margin-bottom: 3px;
-    display: flex;
-}
-#container{
-    width: 100%;
-    height: 870px;
-    background-color: black;
-   
-}
-#home-button{
-    width: 60px;
-    height: 100%;
-    margin-right: 10px;
-    
-}
-#home-button:hover{
-    cursor: pointer;
-}
-#Name{
-    height: 100%;
-    width: 260px;
-    background-color: inherit;
-    font-size: 30px;
-    font-family: cursive;
-    line-height: 2.5;
-    color: white;
-    
-}
-#AboutUs{
-    height: 100%;
-    width: 120px;
-   
-    line-height: 3;
-    background-color: inherit;
-    
-}
-#greeny{
-    display: inline;
-    color: green;
-    background-color: black;
-}
-#about{
-    height: 100%;
-    width: 100%;
-    font-size: 20px;
-    text-align: center;
-    font-family: cursive;
-    color: white;
-    background-color: black;
-    transition-property: background-color;
-    transition-duration: 1s;
-}
-#about:hover{
-    background-color: green;
-    
-}
-#Artists{
-  width: 150px;
-  height: 100%;
-  background-color: black;
-  
-}
-#ArtistName{
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    font-family: cursive;
-    font-size: 20px;
-    line-height: 3;
-    text-align: center;
-    
-}
-#Artists-tray{
-    width: 100%;
-    position: relative;
-    height: 0;
-    display: none;
-    
-}
-.artist{
-    width: 100%;
-    height: 60px;
-    font-family: cursive;
-    font-size: 20px;
-    line-height: 3;
-    text-align: center;
-    background-color: black; 
-    color: white;
-}
-.artist:hover{
-    background-color: yellow;
-    
-}
-#ArtistName:hover{
-    background-color: yellow;
-    cursor: pointer;
-    /* transition vẫn được giữ lại mặc dù chuột đã ra khỏi thẻ*/
-    transition: 1s background-color;
-}
-#Artists:hover > #Artists-tray{
-   display: block;
-}
-#topsongs{
-    width: 120px;
-    height: 100%;
-    margin-left: calc(100% - 450px - 270px);
-}
-#inner-topsongs{
-    width: 120px;
-    height: 100%;
-    font-family: cursive;
-    font-size: 20px;
-    line-height: 3;
-    text-align: center;
-    background-color: black;
-}
-#GuettaOnStage{
-    width: 100%;
-    height: 400px;
-    position: relative;
-  
-}
-#NameArtist{
-    width: auto;
-    height: 100px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 100px;
-    position: absolute;
-    top: calc(50% - 10px);
-    background: rgba(108, 182, 110, 0);
-    
-}
-#monthlyListener{
-    width: auto;
-    height: 30px;
-    background: rgba(108, 182, 110, 0);
-    position: absolute;
-    bottom: 9px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 30px;
-    color: green;
-}
-#playstate{
-    width: 100%;
-    height: 150px;
-    /* Làm cho thẻ có hiện tượng đổi màu từ trên xuống dưới */
-    background-image: linear-gradient(orange, black);
-    position: relative;
-}
-#play-button{
-    width: 150px;
-    height: 50px;
-    position: absolute;
-    top: calc(50% - 25px);
-    left: 50px;
-    background-color: black;
-    border: solid white 5px;
-    color: white;
-    text-align: center;
-    line-height: 1.5;
-    font-family: cursive;
-    font-size: 23px;
-    transition: 1s color, 1s border;
-}
-#play-button:hover{
-    border: solid green 5px;
-    cursor: pointer;
-}
-#song-change{
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    transition: 0.5s;
-    border-radius: 50%;
-    top: calc(50% - 25px);
-    left: calc(50% - 25px); 
-    background: rgba(0, 0, 0, 0); 
-}
-button{
-    outline: none;
-    border: none;
-    cursor: pointer;
-}
-#song-change:hover{
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background: lime;
-}
-#song-change > img{
-    width: inherit;
-    height: inherit;
-    border-radius: 50%;
-}
-#father-button{
-    width: 60px;
-    height: 60px;
-    top: 30px;
-    left: 30px;
-    background-color: rgba(0, 0, 0, 0);
-    position: relative;
-}
-
-    </style>
-    
+<link rel="stylesheet" href="../css/EdSheeran.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alan Walker</title>
+    <title>Ed Sheeran</title>
 </head>
 <body>
     <div id="navbar">
@@ -252,10 +28,10 @@ button{
         
     </div>
     <div id="container">
-        <div id="GuettaOnStage">
-            <div id="NameArtist">David Guetta</div>
+        <div id="EdSheeran">
+            <div id="NameArtist">Ed Sheeran</div>
             <div id="monthlyListener">46.717.539 monthly listeners</div>
-            <img style="width: 100%;height: 100%; object-fit: cover;" src="../img/DavidGuettaOnStage.jpg" alt="GuettaDavid">
+            <img style="width: 100%;height: 100%; object-fit: cover;" src="../img/maxresdefault.jpg" alt="Ed Sheeran">
         </div>
         <div id="playstate">
             <audio autoplay = "autoplay" id="Titanium">
@@ -267,37 +43,8 @@ button{
                 </button>
             </div>
         </div>
-        <div></div>
+        <div id="trackContainer"></div>
     </div>
 </body>
-<script>
-    var innerTopsongs = document.getElementById("inner-topsongs")
-innerTopsongs.addEventListener('mouseover', () => {
-    innerTopsongs.style.backgroundColor = "purple"
-    // transition đc đưa vào trong thẻ và được giữ lại ở đó
-    innerTopsongs.style.transition = "1s background-color"
-})
-innerTopsongs.addEventListener('mouseout', () => {
-    innerTopsongs.style.backgroundColor = "black"
-    
-})
-
-var Titanium = document.getElementById("Titanium")
-var SongChanges = document.getElementById("song-change")
-var playImg = document.getElementById("play-img")
-
-SongChanges.addEventListener("click", PlayandPause)
-
-function PlayandPause(){
-    if(Titanium.paused){
-       Titanium.play()
-       playImg.src = "../img/pause button.png"
-    }
-    else{
-        Titanium.pause()
-        playImg.src = "../img/play-button (24)_5ab94929cf6aa.png"
-        
-    }
-}
-</script>
 </html>
+<script src="../js/EDSHEERAN.js"></script>
