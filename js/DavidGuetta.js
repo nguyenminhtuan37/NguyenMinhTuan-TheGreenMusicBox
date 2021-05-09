@@ -12,7 +12,7 @@ innerTopsongs.addEventListener('mouseout', () => {
 var Titanium = document.getElementById("Titanium")
 var SongChanges = document.getElementById("song-change")
 var playImg = document.getElementById("play-img")
-
+var SayMyName = document.getElementById("Titanium")
 SongChanges.addEventListener("click", PlayandPause)
 
 function PlayandPause(){
@@ -25,6 +25,20 @@ function PlayandPause(){
         playImg.src = "../img/play-button (24)_5ab94929cf6aa.png"
         
     }
+}
+function smallButton1(){
+    if(Titanium.paused){
+       Titanium.play()
+       
+    }
+    else{
+        Titanium.pause()
+        
+        
+    }
+}
+function smallButton2(){
+
 }
 
 

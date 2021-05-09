@@ -9,51 +9,64 @@ innerTopsongs.addEventListener('mouseout', () => {
     
 })
 
-var Titanium = document.getElementById("Titanium")
+var ShapeOfYou = document.getElementById("ShapeOfYou")
 var SongChanges = document.getElementById("song-change")
 var playImg = document.getElementById("play-img")
 
 SongChanges.addEventListener("click", PlayandPause)
 
 function PlayandPause(){
-    if(Titanium.paused){
-       Titanium.play()
+    if(ShapeOfYou.paused){
+        ShapeOfYou.play()
        playImg.src = "../img/pause button.png"
     }
     else{
-        Titanium.pause()
+        ShapeOfYou.pause()
         playImg.src = "../img/play-button (24)_5ab94929cf6aa.png"
         
     }
 }
-function DOM(id){
+function idTracker(id){
     return document.getElementById(id)
 }
-var audio = new Audio();
+
 var fileAudio = "songs/"
 var ext = ".mp3"
-var trackbox = DOM("trackbox")
-var container = DOM("trackContainer")
-var trackNumber = 1
-var tracks = {
-    "ShapeOfYou" : ["Shape of you", "Ed Sheeran - Shape of You (Official Music Video)"],
-    "PERFECT" : ["Perfect", "Perfect - Ed Sheeran"],
-    "IDON'TCARE" : ["I don't care" , "I Don_t Care - Ed Sheeran_ Justin Bieber"],
-    "PHOTOGRAPH" : ["Photograph", "Photograph - Ed Sheeran"],
-    "BeautifulPeople" : ["Beautiful people", "Beautiful People - Ed Sheeran_ Khalid"]
+var audio_playing = false
+var trackbox = idTracker("trackbox")
+var container = idTracker("trackContainer")
+var trackBar = idTracker("trackBars")
+var button = document.getElementsByClassName("PlayAndPause")
+var trackName = document.getElementsByClassName("trackName")
+
+function smallButton1(){
+    if(ShapeOfYou.paused){
+        ShapeOfYou.play()
+        button.innerText = "Pause"
+        button.style.color = "green"
+        trackName.style.color = "green"
+        Perfect.pause()
+    }
+    else{
+        ShapeOfYou.pause()
+        button.innerText = "Play"
+        button.style.color = "white"
+        trackName.style.color = "grewhiteen"
+    }
 }
-for(let track in tracks){
-    
-    var tb = document.createElement("div")
-    var Songsbuttons = document.createElement("div")
-    var trackName = document.createElement("div")
-    container.appendChild(tb)
-    tb.appendChild(Songsbuttons)
-    tb.appendChild(trackName)
-    tb.className = "trackBars"
-    Songsbuttons.className = "Songsbuttons"
-    trackName.className = "trackName"
-    trackName.innerText = tracks[track][0]
-    Songsbuttons.innerText = trackNumber
-    trackNumber = trackNumber + 1
+var Perfect = idTracker("Perfect")
+function smallButton2(){
+    if(Perfect.paused){
+        Perfect.play()
+        button.innerText = "Pause"
+        button.style.color = "green"
+        trackName.style.color = "green"
+        ShapeOfYou.pause()
+    }
+    else{
+        Perfect.pause()
+        button.innerText = "Play"
+        button.style.color = "white"
+        trackName.style.color = "grewhiteen"
+    }
 }

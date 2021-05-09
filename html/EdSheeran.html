@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/225077584e.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="../css/EdSheeran.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,19 +32,52 @@
         <div id="EdSheeran">
             <div id="NameArtist">Ed Sheeran</div>
             <div id="monthlyListener">46.717.539 monthly listeners</div>
-            <img style="width: 100%;height: 100%; object-fit: cover;" src="../img/maxresdefault.jpg" alt="Ed Sheeran">
+            <img style="width: 100%;height: 100%; object-fit: cover; z-index: 0;" src="../img/maxresdefault.jpg" alt="Ed Sheeran">
         </div>
         <div id="playstate">
-            <audio autoplay = "autoplay" id="Titanium">
-                <source src="../songs/Titanium - David Guetta_ Sia.mp3" type="audio/mp3">
+            <audio autoplay = "autoplay" id="ShapeOfYou">
+                <source src="../songs/Ed Sheeran - Shape of You (Official Music Video).mp3" type="audio/mp3">
             </audio>
+            <audio autoplay = "autoplay" id="Perfect">
+              <source src="../songs/Perfect - Ed Sheeran.mp3" type="audio/mp3">
+          </audio>
+          <audio autoplay = "autoplay" id="Photograph">
+            <source src="../songs/Photograph - Ed Sheeran.mp3" type="audio/mp3">
+        </audio>
+        <audio autoplay = "autoplay" id="IDON'TCARE">
+          <source src="../songs/I Don_t Care - Ed Sheeran_ Justin Bieber.mp3" type="audio/mp3">
+        </audio>
+        <audio autoplay = "autoplay" id="BeautifulPeople">
+        <source src="../songs/Beautiful People - Ed Sheeran_ Khalid.mp3" type="audio/mp3">
+        </audio>
             <div id="father-button">
                 <button type="button" id="song-change">
                   <img src="../img/play-button (24)_5ab94929cf6aa.png" alt="play" id="play-img">
                 </button>
             </div>
         </div>
-        <div id="trackContainer"></div>
+        <div id="trackContainer">
+          <div class="trackBars">
+            <div class="PlayAndPause">Play</div>
+            <button class="trackName" onmousedown="smallButton1()">1. Shape of you</button>
+          </div>
+          <div class="trackBars">
+            <div class="PlayAndPause">Play</div>
+            <button class="trackName" onmousedown="smallButton2()">2. Perfect</button>
+          </div>
+          <div class="trackBars">
+            <div class="PlayAndPause">Play</div>
+            <button class="trackName" onmousedown="smallButton3()">3. Photograph</button>
+          </div>
+          <div class="trackBars">
+            <div class="PlayAndPause">Play</div>
+            <button class="trackName" onmousedown="smallButton4()">4. I don't care</button>
+          </div>
+          <div class="trackBars">
+            <div class="PlayAndPause">Play</div>
+            <button class="trackName" onmousedown="smallButton5()">5. Beautiful people</button>
+          </div>
+        </div>
     </div>
 </body>
 </html>
