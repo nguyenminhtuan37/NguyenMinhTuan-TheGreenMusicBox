@@ -166,7 +166,7 @@ a{
     width: 100%;
     height: 150px;
     /* Làm cho thẻ có hiện tượng đổi màu từ trên xuống dưới */
-    background-image: linear-gradient(whitesmoke, black);
+    background-image: linear-gradient(black, black);
     position: relative;
 }
 #play-button{
@@ -223,8 +223,41 @@ button{
     background-color: rgba(0, 0, 0, 0);
     position: relative;
 }
-
-    </style>
+.trackBars{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+}
+.trackBars:hover{
+    background-color: rgb(189, 185, 185);
+} 
+.trackName{
+    height: 100%;
+    width: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 30px;
+    text-align: center;
+    line-height: 2.1;
+    background-color: rgba(108, 182, 110, 0);
+    font-size: 20px;
+}
+#trackContainer{
+    width: 100%;
+    height: auto;
+}
+.PlayAndPause{
+    background-color: rgba(108, 182, 110, 0);
+    font-size: 20px;
+    width: 70px; 
+    height: 30px;  
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 2.1;
+}
+.PlayAndPause:hover{
+    cursor: pointer;
+}
+</style>
     
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -267,7 +300,28 @@ button{
                 </button>
             </div>
         </div>
-        <div></div>
+        <div id="trackContainer">
+            <div class="trackBars">
+              <div class="PlayAndPause">Play</div>
+              <button class="trackName" onmousedown="smallButton1()">1. Faded</button>
+            </div>
+            <div class="trackBars">
+              <div class="PlayAndPause">Play</div>
+              <button class="trackName" onmousedown="smallButton2()">2. Alone, Pt II</button>
+            </div>
+            <div class="trackBars">
+              <div class="PlayAndPause">Play</div>
+              <button class="trackName" onmousedown="smallButton3()">3. Fake a Smile</button>
+            </div>
+            <div class="trackBars">
+              <div class="PlayAndPause">Play</div>
+              <button class="trackName" onmousedown="smallButton4()">4. Fake a Smile</button>
+            </div>
+            <div class="trackBars">
+              <div class="PlayAndPause">Play</div>
+              <button class="trackName" onmousedown="smallButton5()">5. Lily</button>
+            </div>
+          </div>
     </div>
 </body>
 <script>

@@ -134,9 +134,9 @@ a{
 }
 #GuettaOnStage{
     width: 100%;
-    height: 400px;
+    height: 500px;
     position: relative;
-  
+    
 }
 #NameArtist{
     width: auto;
@@ -144,9 +144,9 @@ a{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 100px;
     position: absolute;
-    top: calc(50% - 10px);
+    top: calc(50% + 70px);
     background: rgba(108, 182, 110, 0);
-    
+    color: gray;
 }
 #monthlyListener{
     width: auto;
@@ -161,8 +161,8 @@ a{
 #playstate{
     width: 100%;
     height: 150px;
-    /* Làm cho thẻ có hiện tượng đổi màu từ trên xuống dưới */
-    background-image: linear-gradient(orange, black);
+   
+    background-color: black;
     position: relative;
 }
 #play-button{
